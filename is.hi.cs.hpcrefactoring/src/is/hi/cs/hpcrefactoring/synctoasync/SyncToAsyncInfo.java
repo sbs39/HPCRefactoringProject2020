@@ -5,9 +5,6 @@ import org.eclipse.cdt.internal.ui.refactoring.MethodContext;
 import org.eclipse.cdt.internal.ui.refactoring.utils.VisibilityEnum;
 import org.eclipse.core.resources.IFile;
 
-/**
- * The wizard page for SyncToAsync refactoring, creates the UI page.
- */
 public class SyncToAsyncInfo {
 	private int offset;
 	private String newName;

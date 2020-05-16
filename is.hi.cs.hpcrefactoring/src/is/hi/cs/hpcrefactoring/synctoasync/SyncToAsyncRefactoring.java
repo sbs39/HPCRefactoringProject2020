@@ -322,7 +322,7 @@ public class SyncToAsyncRefactoring extends CRefactoring {
 		}
 		
 		if (!parent.contains("FunctionCallExpression") || !propertyInParent.contains("IASTFunctionCallExpression.FUNCTION_NAME")) {
-			status.addFatalError(Messages.NonFunctionSelected);
+			status.addFatalError(Messages.NonMPISendRecvSelected);
 			return status;
 		}
 		

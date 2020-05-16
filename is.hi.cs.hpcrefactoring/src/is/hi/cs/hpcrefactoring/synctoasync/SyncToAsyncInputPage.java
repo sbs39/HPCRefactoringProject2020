@@ -90,6 +90,7 @@ public class SyncToAsyncInputPage extends UserInputWizardPage {
 	private void verifyName(String name) {
 		if (info.isNameUsed(name)) {
 			setErrorMessage(NLS.bind(Messages.InputPage_NameAlreadyDefined, name)); 
+			System.out.println("name used");
 			setPageComplete(false);
 		}
 	}

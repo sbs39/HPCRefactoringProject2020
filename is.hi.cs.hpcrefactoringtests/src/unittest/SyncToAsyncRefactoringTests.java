@@ -8,7 +8,7 @@
 
 package unittest;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertEquals;
 
 import org.eclipse.cdt.core.dom.ast.IASTExpression;
 import org.eclipse.cdt.core.dom.ast.IASTNode;
@@ -90,6 +90,6 @@ public class SyncToAsyncRefactoringTests {
 		String result = new String (Files.readAllBytes(Paths.get(beforeFilePath)));
 
 		//Compare result to expected file
-		assertTrue(errorMessage, result.equals(expected));
+		assertEquals(errorMessage, result, expected);
 	}
 }
